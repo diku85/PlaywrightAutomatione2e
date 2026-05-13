@@ -49,10 +49,10 @@ public class PlaywrightFactory {
 		switch (prop.getProperty("browser")) {
 		case "chrome":
 //			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-			tBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+			tBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
 			break;
 		case "firefox":
-			tBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+			tBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
 			break;
 		}
 
